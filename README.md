@@ -40,3 +40,6 @@ See step-by-step instructions in `/docs`:
 - SSH changes have to be validated and reconnected through a second session
 - auditd logs need to go somewhere, hopefully a centralized location
 - least privilege is easy to create with due diligence
+
+## Credits
+Thanks to Bethelhem Beza @ [Missionable](https://missionable.github.io/missions/linux-hardening-fundamentals)
