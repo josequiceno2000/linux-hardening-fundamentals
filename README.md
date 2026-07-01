@@ -42,4 +42,4 @@ See step-by-step instructions in `/docs`:
 - least privilege is easy to create with due diligence
 
 ## Credits
-Thanks to Bethelhem Beza @ [Missionable](https://missionable.github.io/missions/linux-hardening-fundamentals)
+Thanks to Bethelhem Beza @ [Missionable](https://missionable.github.io/missions/linux-hardening-fundamentals) for the lab guidance! Keep up the great work!
