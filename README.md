@@ -11,15 +11,25 @@ Hardened a fresh Ubuntu server against common attack vectors by enforcing key-on
 This project mirrors a real-world "secure-by-default" Linux onboarding task for SOC analysts / cloud security teams.
 
 ## What I Built (Birds-Eye View)
-- Key-only SSH access + root login disabled + SSH port changed
-- Fail2ban to reduce brute-force attempts
-- UFW allow-list firewall (deny by default)
-- Non-root admin user (`secadmin`) with controlled sudo access
-- auditd rules for:
+Key-only SSH access + root login disabled + SSH port changed
+![Lynis Scan Results](src/lynis-audit-results.png)
+![Lynis Scan Details](src/lynis-security-scan-details.png)
+
+Fail2ban to reduce brute-force attempts
+![Fail2ban report](src/fail2ban.png)
+
+UFW allow-list firewall (deny by default)
+![UFW Firewall Config](src/ufw-firewall-config.png)
+
+Non-root admin user (`secadmin`) with controlled sudo access
+auditd rules for:
   - privilege escalation attempts
   - file access on `/etc`
   - login events
-- Centralized audit logging to a dedicated folder
+![Hardening Rules](src/hardening-rules.png)
+
+Centralized audit logging to a dedicated folder
+![Audit Report](src/audit-report.png)
 
 ## Tools Used
 - `ssh`, `sshd`
